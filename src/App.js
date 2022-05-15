@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+//import Cart from "./Components/cart";
+import SearchBar from "./Components/SearchBar";
+import BookData from "./Data.json";
+import FAQ from "./Components/FAQ/FAQ";
 
-function App() {
+/*function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <SearchBar placeholder="Enter..." data={BookData} />
+     
+    
     </div>
   );
+}*/
+const App = () => {
+  return (
+    <>
+    <FAQ/>
+    </>
+  )
 }
 
 export default App;
