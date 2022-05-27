@@ -75,7 +75,7 @@ const Navbar = () => {
                     isActive ? "activelinks" : "links"
                   }
                   onClick={handleClick}
-                  to="/FAQ"
+                  to="/faq"
                 >
                   FAQs
                 </NavLink>
