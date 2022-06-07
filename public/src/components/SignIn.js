@@ -17,11 +17,11 @@ const SignIn=()=> {
             <Paper elevation = {10} style = {PaperStyle}>
                 <div align="center">
                 <Avatar style = {avatarStyle}><LockOutlinedIcon/></Avatar>
-                <h2>Sign </h2>
+                <h2>Sign In</h2>
                 
                 </div>
                 <TextField id="Username" label = 'Username' placeholder="Enter Username" fullWidth variant="standard" required/>
-                <TextField id="Password" label = 'Pass' placeholder="Enter Password" type='password' fullWidth variant="standard" required/>
+                <TextField id="Password" label = 'Password' placeholder="Enter Password" type='password' fullWidth variant="standard" required/>
                 
                 <FormControlLabel
                   control={
@@ -34,17 +34,14 @@ const SignIn=()=> {
 
                 <Button type='Submit' color="secondary" fullWidth variant="contained" style={{ marginTop: `${10}px` }}>SIGN IN</Button>
 
-                
                 <div className="Link" style={{ marginTop: `${10}px` }}>
                 <Typography >
-                  
-                  <Link href ={"/SignUp"} underline="hover"  >
-                     {' Forgot Password ? '}
-
-                    </Link>
-                    </Typography>
+                   <Link href="#" underline="hover">
+                     {'Forgot Password ?'}
+                    
+                     </Link>
+                </Typography>
                 </div>
-
                  
              
                 <div className="Link" style={{ marginTop: `${5}px` }}>
