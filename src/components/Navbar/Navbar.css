@@ -136,9 +136,7 @@
     .menuicon {
         display: contents;
     }
-    .rightnavbar>button {
-        display: none;
-    }
+    
     .navlist {
         display: none;
     }
