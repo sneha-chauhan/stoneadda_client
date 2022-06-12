@@ -4,8 +4,8 @@ import SignUp from "./components/SignUp";
 import SignIn from "./components/SignIn";
 import FAQ from "./components/FAQ/FAQ";
 import Testimonials from "./components/Testimonials";
-import WhyStoneadda from "./components/WhyStoneadda";
-//import BookData from "./Data.json";
+import WhySell from "./components/WhySell/WhySell";
+import Home from "./components/Home";
 
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
@@ -13,17 +13,17 @@ function App() {
   return (
     <div className="App">
       <Router>
-      <Navbar />
-
-        <Routes>  
+        <Navbar />
+        {/* <Home /> */}
+        <Routes>
+          
+          <Route exact path="/Home" element={<Home />}></Route>  
           <Route exact path="/SignIn" element={<SignIn />}></Route>
           <Route exact path="/SignUp" element={<SignUp />}></Route>
           <Route exact path="/faq" element={<FAQ />}></Route>
+          <Route exact path="/whySell" element={<WhySell />}></Route>
         </Routes>
       </Router>
-      <Testimonials />
-      <WhyStoneadda />
-      {/* <FAQ />  */}
     </div>
   );
 }
